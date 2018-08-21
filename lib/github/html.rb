@@ -7,6 +7,10 @@ module GitHub
   #
   # See GitHub::HTML::Filter for information on building filters.
   module HTML
+    # Our DOM implementation.
+    DocumentFragment = Nokogiri::HTML::DocumentFragment
+
+    # Filter implementations
     require 'github/html/filter'
     require 'github/html/camo_filter'
     require 'github/html/sanitization_filter'
