@@ -73,7 +73,7 @@ module HTML
                   vspace width itemprop].freeze
         }.freeze,
         protocols: {
-          'a'          => { 'href' => ANCHOR_SCHEMES }.freeze,
+          'a'          => { 'href' => ANCHOR_SCHEMES },
           'blockquote' => { 'cite' => ['http', 'https', :relative].freeze },
           'del'        => { 'cite' => ['http', 'https', :relative].freeze },
           'ins'        => { 'cite' => ['http', 'https', :relative].freeze },
